@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon"
+  href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMiAxMEM4LjY4NjI5IDEwIDYgMTIuNjg2MyA2IDE2QzYgMTkuMzEzNyA4LjY4NjI5IDIyIDEyIDIyQzEzLjY1NjkgMjIgMTUuMTU2OSAyMS4zMjg0IDE2LjI0MjYgMjAuMjQyNkwxNS43NTc0IDE5Ljc1NzRDMTQuODQzMSAyMC42NzE2IDEzLjU5MzEgMjEuMjUgMTIgMjEuMjVDOS4xMDA1MSAyMS4yNSA2Ljc1IDE4Ljg5OTUgNi43NSAxNkM2Ljc1IDEzLjEwMDUgOS4xMDA1MSAxMC43NSAxMiAxMC43NUMxMy41OTMxIDEwLjc1IDE0Ljg0MzEgMTEuMzI4NCAxNS43NTc0IDEyLjI0MjZMMTYuMjQyNiAxMS43NTc0QzE1LjE1NjkgMTAuNjcxNiAxMy42NTY5IDEwIDEyIDEwWiIgZmlsbD0iIzAwRjBGRiIvPgogICAgPHBhdGggZD0iTTIwIDEwQzE4LjM0MzEgMTAgMTYuODQzMSAxMC42NzE2IDE1Ljc1NzQgMTEuNzU3NEwxNi4yNDI2IDEyLjI0MjZDMTcuMTU2OSAxMS4zMjg0IDE4LjQwNjkgMTAuNzUgMjAgMTAuNzVDMjIuODk5NSAxMC43NSAyNS4yNSAxMy4xMDA1IDI1LjI1IDE2QzI1LjI1IDE4Ljg5OTUgMjIuODk5NSAyMS4yNSAyMCAyMS4yNUMxOC40MDY5IDIxLjI1IDE3LjE1NjkgMjAuNjcxNiAxNi4yNDI2IDE5Ljc1NzRMMTUuNzU3NCAyMC4yNDI2QzE2Ljg0MzEgMjEuMzI4NCAxOC4zNDMxIDIyIDIwIDIyQzIzLjMxMzcgMjIgMjYgMTkuMzEzNyAyNiAxNkMyNiAxMi42ODYzIDIzLjMxMzcgMTAgMjAgMTBaIiBmaWxsPSIjQ0NGRjAwIi8+CiAgICA8Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxLjUiIGZpbGw9IiNFMEY2RUQiLz4KPC9zdmc+"
+  type="image/svg+xml">
   <title>Infino Loop — AI & Bot Development Blog</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,32 +14,43 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
     <script type="module" crossorigin src="/infino-loop/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/infino-loop/assets/styles-DIS9ExJf.css">
+    <link rel="stylesheet" crossorigin href="/infino-loop/assets/styles-Bp5EKCfE.css">
   </head>
   <body class="page">
     <header class="header">
   <div class="container header__container">
-    <a href="./#hero" class="header__logo logo">
+    <a href="/" class="header__logo logo">
       <span class="logo__text">Infino</span><span class="logo__dot">.</span><span class="logo__sub">Loop</span>
     </a>
 
     <nav class="header__nav nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#evolution" class="nav__link">Эволюция</a></li>
-        <li class="nav__item"><a href="#tech" class="nav__link">Технологии</a></li>
-        <li class="nav__item"><a href="#cases" class="nav__link">Кейсы</a></li>
-        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
+        <li><a href="#evolution" class="nav__link">Эволюция</a></li>
+        <li><a href="#cases" class="nav__link">Кейсы</a></li>
+        <li><a href="#tech" class="nav__link">Технологии</a></li>
+        <li><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
 
     <div class="header__actions">
       <a href="#contact" class="btn btn--primary header__btn">Связаться</a>
-      <button class="header__burger" id="burger">
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span>
         <span></span>
       </button>
     </div>
   </div>
 </header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu__nav">
+    <a href="#evolution" class="mobile-menu__link">Эволюция</a>
+    <a href="#cases" class="mobile-menu__link">Кейсы</a>
+    <a href="#tech" class="mobile-menu__link">Технологии</a>
+    <a href="#blog" class="mobile-menu__link">Блог</a>
+    <a href="#contact" class="mobile-menu__link mobile-menu__link--cta">Начать проект</a>
+  </nav>
+</div>
 
     <main class="main-content">
       <!-- Loads the specified .html file -->
@@ -54,7 +67,7 @@
             </div>
 
             <h1 class="hero__title" id="hero-title">
-                Переосмыслите подход к развитию: AI-ассистенты нового поколения
+                Переосмыслите подход к развитию:<br/> AI-ассистенты<br/> нового поколения
             </h1>
 
             <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
@@ -123,7 +136,7 @@
         <h2 class="section-title">Лаборатория знаний</h2>
         <div class="blog__grid">
             <article class="blog-card">
-                <div class="blog-card__img"><img src="img/placeholder.png" alt="AI"></div>
+                <div class="blog-card__img"><img src="/infino-loop/assets/two-CdvvUJWe.jpg" alt="robot"></div>
                 <div class="blog-card__body">
                     <span class="blog-card__tag">Инновации</span>
                     <h3>Как построить карьеру, которая работает на вас в эпоху AI</h3>
@@ -131,13 +144,48 @@
                 </div>
             </article>
             <article class="blog-card">
-                <div class="blog-card__img"><img src="img/placeholder.png" alt="Passive Income"></div>
+                <div class="blog-card__img"><img src="/infino-loop/assets/three-uCT89PH1.jpg" alt="robot"></div>
                 <div class="blog-card__body">
                     <span class="blog-card__tag">Выгода</span>
                     <h3>Технология для пассивного дохода: миф или реальность?</h3>
                     <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
                 </div>
             </article>
+        </div>
+    </div>
+</section>
+
+<section class="cases section" id="cases">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Реализованные кейсы</h2>
+            <p class="section-subtitle">AI-инструменты для реальных задач, проверенные на европейском рынке.</p>
+        </div>
+        <div class="cases__grid">
+            <div class="case-card">
+                <div class="case-card__img"><img src="/infino-loop/assets/four-CIhynfEU.jpg" alt="AI"></div>
+                <div class="case-card__content">
+                    <span class="case-card__tag">E-commerce (France)</span>
+                    <h3>Интеллектуальный ритейл-ассистент</h3>
+                    <p>Автоматизация 85% запросов службы поддержки для парижского бренда одежды.</p>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-card__img"><img src="/infino-loop/assets/five-BiQwUaMk.jpg" alt="AI"></div>
+                <div class="case-card__content">
+                    <span class="case-card__tag">Fintech</span>
+                    <h3>Нейро-аналитик для трейдинга</h3>
+                    <p>Обработка рыночных данных в реальном времени с точностью прогнозов до 92%.</p>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-card__img"><img src="/infino-loop/assets/six--vk-vjaw.jpg" alt="AI"></div>
+                <div class="case-card__content">
+                    <span class="case-card__tag">SaaS</span>
+                    <h3>Голосовой AI-секретарь</h3>
+                    <p>Инновационная технология распознавания речи для автоматизации записи в клиники.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -150,27 +198,37 @@
                 <p>Получите бесплатную консультацию по всем вопросам автоматизации. Быстрый и лёгкий старт гарантирован.
                 </p>
             </div>
-            <form class="contact__form" id="mainForm">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email (hello@infino-loop.org)" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" id="phoneInput" placeholder="Телефон (только цифры)" required>
-                </div>
-                <div class="form-group captcha-group">
-                    <label id="captchaLabel">2 + 5 = ?</label>
-                    <input type="text" id="captchaInput" placeholder="Ответ" required>
-                </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="agree" required>
-                    <label for="agree">Я согласен с политикой обработки данных</label>
-                </div>
-                <button type="submit" class="btn btn--primary">Запросить доступ</button>
+
+            <div class="contact__form-container">
+                <form class="contact__form" id="mainForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" id="phoneInput" placeholder="Телефон (только цифры)" required>
+                    </div>
+                    <div class="form-group captcha-group">
+                        <label id="captchaLabel">2 + 5 = ?</label>
+                        <input type="text" id="captchaInput" placeholder="Ответ" required>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="agree" required>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Я согласен с политикой обработки данных</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary"
+                        style="width: 100%; justify-content: center;">Запросить доступ</button>
+                </form>
+
                 <div id="formStatus" class="form-status"></div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
