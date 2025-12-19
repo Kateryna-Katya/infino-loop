@@ -11,7 +11,7 @@
             </div>
 
             <h1 class="hero__title" id="hero-title">
-                Переосмыслите подход к развитию: AI-ассистенты нового поколения
+                Переосмыслите подход к развитию:<br/> AI-ассистенты<br/> нового поколения
             </h1>
 
             <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="200">
@@ -80,7 +80,7 @@
         <h2 class="section-title">Лаборатория знаний</h2>
         <div class="blog__grid">
             <article class="blog-card">
-                <div class="blog-card__img"><img src="img/placeholder.png" alt="AI"></div>
+                <div class="blog-card__img"><img src="/img/two.jpg" alt="robot"></div>
                 <div class="blog-card__body">
                     <span class="blog-card__tag">Инновации</span>
                     <h3>Как построить карьеру, которая работает на вас в эпоху AI</h3>
@@ -88,13 +88,48 @@
                 </div>
             </article>
             <article class="blog-card">
-                <div class="blog-card__img"><img src="img/placeholder.png" alt="Passive Income"></div>
+                <div class="blog-card__img"><img src="/img/three.jpg" alt="robot"></div>
                 <div class="blog-card__body">
                     <span class="blog-card__tag">Выгода</span>
                     <h3>Технология для пассивного дохода: миф или реальность?</h3>
                     <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
                 </div>
             </article>
+        </div>
+    </div>
+</section>
+
+<section class="cases section" id="cases">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Реализованные кейсы</h2>
+            <p class="section-subtitle">AI-инструменты для реальных задач, проверенные на европейском рынке.</p>
+        </div>
+        <div class="cases__grid">
+            <div class="case-card">
+                <div class="case-card__img"><img src="/img/four.jpg" alt="AI"></div>
+                <div class="case-card__content">
+                    <span class="case-card__tag">E-commerce (France)</span>
+                    <h3>Интеллектуальный ритейл-ассистент</h3>
+                    <p>Автоматизация 85% запросов службы поддержки для парижского бренда одежды.</p>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-card__img"><img src="/img/five.jpg" alt="AI"></div>
+                <div class="case-card__content">
+                    <span class="case-card__tag">Fintech</span>
+                    <h3>Нейро-аналитик для трейдинга</h3>
+                    <p>Обработка рыночных данных в реальном времени с точностью прогнозов до 92%.</p>
+                </div>
+            </div>
+            <div class="case-card">
+                <div class="case-card__img"><img src="/img/six.jpg" alt="AI"></div>
+                <div class="case-card__content">
+                    <span class="case-card__tag">SaaS</span>
+                    <h3>Голосовой AI-секретарь</h3>
+                    <p>Инновационная технология распознавания речи для автоматизации записи в клиники.</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -107,27 +142,37 @@
                 <p>Получите бесплатную консультацию по всем вопросам автоматизации. Быстрый и лёгкий старт гарантирован.
                 </p>
             </div>
-            <form class="contact__form" id="mainForm">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Email (hello@infino-loop.org)" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" id="phoneInput" placeholder="Телефон (только цифры)" required>
-                </div>
-                <div class="form-group captcha-group">
-                    <label id="captchaLabel">2 + 5 = ?</label>
-                    <input type="text" id="captchaInput" placeholder="Ответ" required>
-                </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="agree" required>
-                    <label for="agree">Я согласен с политикой обработки данных</label>
-                </div>
-                <button type="submit" class="btn btn--primary">Запросить доступ</button>
+
+            <div class="contact__form-container">
+                <form class="contact__form" id="mainForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" id="phoneInput" placeholder="Телефон (только цифры)" required>
+                    </div>
+                    <div class="form-group captcha-group">
+                        <label id="captchaLabel">2 + 5 = ?</label>
+                        <input type="text" id="captchaInput" placeholder="Ответ" required>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="agree" required>
+                            <span class="checkmark"></span>
+                            <span class="label-text">Я согласен с политикой обработки данных</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary"
+                        style="width: 100%; justify-content: center;">Запросить доступ</button>
+                </form>
+
                 <div id="formStatus" class="form-status"></div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
